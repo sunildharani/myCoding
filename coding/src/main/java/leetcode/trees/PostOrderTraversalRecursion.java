@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Stack;
 
-public class PreOrderTraversalRecursion {
+public class PostOrderTraversalRecursion {
 	
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<Integer>(Arrays.asList(1,null,2,3));
@@ -34,11 +34,11 @@ public class PreOrderTraversalRecursion {
 				qu.poll();
 			}
 		}
-		preorderTraversal(root);
+		postorderTraversal(root);
 		
 	}
 	
-	  public static List<Integer> preorderTraversal(TreeNode root) {
+	  public static List<Integer> postorderTraversal(TreeNode root) {
 	        Stack<TreeNode> st = new Stack<TreeNode>();
 	        ArrayList<Integer> al = new ArrayList<Integer>();
 	        if(root == null) {
@@ -47,7 +47,6 @@ public class PreOrderTraversalRecursion {
 	        st.add(root);
 	        while(!st.isEmpty()) {
 	        	TreeNode data = st.pop();      
-	        	al.add(data.val);
 	        	if(data.right != null) {
 	        		st.push(data.right);
 	        	}
