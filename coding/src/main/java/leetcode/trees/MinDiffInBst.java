@@ -4,7 +4,7 @@ public class MinDiffInBst {
 
 	public int minDiffInBST(TreeNode root) {
 		if(root == null) {
-			return 0
+			return 0;
 		}
 		return minDiff(root);
 	}
@@ -33,5 +33,5 @@ public class MinDiffInBst {
 		
 	}
 	
-	public int findMax
+
 }

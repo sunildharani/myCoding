@@ -5,7 +5,7 @@ import java.util.List;
 
 public class InOrderRecurison {
 	
-	ArrayList<Integer> list = new ArrayList<Integer>()
+	ArrayList<Integer> list = new ArrayList<Integer>();
 	/**TODO **/
 	public List<Integer> inorderTraversal(TreeNode root) {
 		recursion(root);

@@ -24,15 +24,7 @@ public class SortList {
 	private void merge(ListNode head, ListNode mid, ListNode tail) {
 		ListNode head1 = head;
 		ListNode head2 = mid.next;
-		Collections.sort(list, new Comparator<Integer>() {
 
-			@Override
-			public int compare(Integer o1, Integer o2) {
-				// TODO Auto-generated method stub
-				return 0;
-			}
-			
-		});
 		
 	}
 

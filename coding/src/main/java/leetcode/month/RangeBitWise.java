@@ -10,11 +10,7 @@ public class RangeBitWise {
 		int i = 1;
 		int min = 4;
 		int max = 7;
-		while(min % (2 ** i) == 0) {
-			arr[0] = '0';
-		}else {
-			min++;
-		}
+
 		while(min <= max) {
 			
 		}

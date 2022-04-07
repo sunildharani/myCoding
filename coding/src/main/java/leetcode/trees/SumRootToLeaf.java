@@ -7,17 +7,15 @@ public class SumRootToLeaf {
 		 if(root == null)
 			 return 0;
 		 int num = 0;
-		 num = sumRoottoLeaf(root.left);
+		 num = sumRootToLeaf(root.left);
 		 int leftnum = num >> root.val;
-		 num = sumRoottoLeaf(root.right);
+		 num = sumRootToLeaf(root.right);
 		 int rightnum = num >> root.val;
 		 sum += leftnum+rightnum;
-		 
+		 return sum;
 	 }
 	 
-	 public static int sumRoot(TreeNode root,int num) {
-		 return sumRoot(root.left) >> root.val;
-	 }
+
 	
 	 
 	 

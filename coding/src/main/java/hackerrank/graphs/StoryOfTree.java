@@ -23,7 +23,7 @@ public class StoryOfTree {
 	        	nodes[b].nei.add(nodes[a]);
 	        }
 	        int noofGuesses = countGuesses(guesses,nodes);
-
+			return "";
 	 }
 
 	    private static int countGuesses(int[][] guesses, Gnode[] nodes) {
@@ -73,20 +73,7 @@ public class StoryOfTree {
 	        }
 	    }
 	    
-	    private List<Integer> PreOrder(Guess guess,int n) {
-	    	List<Integer> res = new LinkedList<Integer>();
-	    	Stack<Guess> st = new Stack<Guess>();
-	    	st.add(guess);
-	    	while(!st.isEmpty()) {
-	    		Guess temp = st.pop();
-	    		temp.visited = true;
-	    		res.add(temp.i);
-	    		List<Guess> ne= temp.nei;
-	    		for(List<Guess> ne :nei) {
-	    			
-	    		}
-	    	}
-	    }
+
 
 }
 
